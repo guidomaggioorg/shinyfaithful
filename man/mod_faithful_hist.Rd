@@ -8,10 +8,12 @@
 \usage{
 mod_faithful_hist_ui(id)
 
-mod_faithful_hist_server(id)
+mod_faithful_hist_server(id, variable = NULL)
 }
 \arguments{
 \item{id}{Internal parameter for {shiny}.}
+
+\item{variable}{choices are waiting and eruptions.}
 }
 \description{
 UI and server function for an example Shiny module.

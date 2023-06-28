@@ -12,7 +12,8 @@ app_ui <- function(request) {
       # Application title
       titlePanel("Old Faithful Geyser Data"),
       # module
-      mod_faithful_hist_ui("hist")
+      mod_faithful_hist_ui("hist-waiting"),
+      mod_faithful_hist_ui("hist-eruptions")
     )
   )
 }
