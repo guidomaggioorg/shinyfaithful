@@ -10,3 +10,6 @@ $run_dev.*
 ^LICENSE\.md$
 ^README\.Rmd$
 ^\.github$
+^app\.R$
+^rsconnect$
+^deploy$

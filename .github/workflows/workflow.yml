@@ -1,8 +1,8 @@
 # Workflow derived from https://github.com/r-lib/actions/tree/v2/examples
 # Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
 
-# Name of the workflow => usethis::use_github_actions_badge("CI-renv")
-name: CI-renv
+# Name of the workflow => usethis::use_github_actions_badge("CI-CD-renv")
+name: CI-CD-renv
 
 on:
   # Triggered on push and pull request events
@@ -22,7 +22,7 @@ jobs:
       # single OS and R version, aligned with the target deployment environment
       matrix:
         config:
-          - {os: ubuntu-latest, r: '4.3.0'}
+          - {os: ubuntu-latest, r: 'release'}
 
     env:
       # Access token for GitHub
@@ -61,3 +61,12 @@ jobs:
 
       - name: Check package
         uses: r-lib/actions/check-r-package@v2
+
+      - name: Deploy to shinyapps.io
+        # Continuous deployment only for pushes to the main / master branch
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        env:
+          SHINYAPPS_ACCOUNT: ${{ secrets.SHINYAPPS_ACCOUNT }}
+          SHINYAPPS_TOKEN: ${{ secrets.SHINYAPPS_TOKEN }}
+          SHINYAPPS_SECRET: ${{ secrets.SHINYAPPS_SECRET }}
+        run: Rscript deploy/deploy-shinyapps.R

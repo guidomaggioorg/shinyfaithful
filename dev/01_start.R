@@ -111,5 +111,30 @@ usethis::use_github_action(
 )
 usethis::use_github_actions_badge("workflow")
 
+golem::add_shinyappsio_file()
+
+usethis::use_import_from("pkgload", "load_all")
+
+
+usethis::use_package("rsconnect", "Suggests")
+
+rsconnect::setAccountInfo(name='gmaggio',
+                          token='406374DC9DB3D34DF4A62E9510664BA7',
+                          secret='Ntjzk/FLQUApr9hJPmUUgWeEmCFzeXvRsMWtRhCc')
+rsconnect::deployApp(appName = "FaithfulPlots",
+                     account = "gmaggio")
+
+usethis::use_git_ignore("rsconnect")
+
+usethis::use_build_ignore("deploy")
+
+usethis::use_github_action(
+  url = file.path("https://github.com/miraisolutions/techguides/blob/master",
+                  # "shiny-ci-cd/actions/ci-cd.yml"
+                  "shiny-ci-cd/actions/ci-cd-renv.yml"
+  ),
+  save_as = "workflow.yml"
+)
+
 
 
