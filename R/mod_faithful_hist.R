@@ -26,11 +26,12 @@ mod_faithful_hist_ui <- function(id) {
   )
 }
 #' @rdname mod_faithful_hist
-mod_faithful_hist_server <- function(id){
+#' @param variable choices are waiting and eruptions.
+mod_faithful_hist_server <- function(id, variable = NULL){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
     # generate bins based on input$bins from ui.R
-    variable <- "waiting"
+    # variable <- "waiting"
     x <- datasets::faithful[, variable, drop = FALSE]
     bins <- reactive(seq(min(x), max(x), length.out = input$bins + 1))
     output$distPlot <- renderPlot({
