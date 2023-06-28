@@ -1,0 +1,32 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# shinyfaithful
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of shinyfaithful is to …
+
+## Installation
+
+You can install the development version of shinyfaithful like so:
+
+``` r
+# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(shinyfaithful)
+## basic example code
+shinyfaithful::run_app()
+#> Loading required package: shiny
+#> 
+#> Listening on http://127.0.0.1:7691
+```
+
+<img src="man/figures/README-example-1.png" width="100%" />
