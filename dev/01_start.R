@@ -84,3 +84,8 @@ golem::fill_desc(
 
 ## Use git ----
 usethis::use_git()
+
+
+usethis::use_github(private = FALSE, organisation = "guidomaggioorg")
+
+

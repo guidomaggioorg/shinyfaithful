@@ -24,9 +24,4 @@ This is a basic example which shows you how to solve a common problem:
 library(shinyfaithful)
 ## basic example code
 shinyfaithful::run_app()
-#> Loading required package: shiny
-#> 
-#> Listening on http://127.0.0.1:7691
 ```
-
-<img src="man/figures/README-example-1.png" width="100%" />
