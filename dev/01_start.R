@@ -89,3 +89,20 @@ usethis::use_git()
 usethis::use_github(private = FALSE, organisation = "guidomaggioorg")
 
 
+renv::init(
+  # use the DESCRIPTION file to capture dependencies
+  settings = list(snapshot.type = "explicit"),
+  # do not install dependencies (done in a custom way)
+  bare = TRUE
+)
+renv::install("remotes")
+
+(deps <- remotes::dev_package_deps(dependencies = TRUE))
+renv::install(with(deps, sprintf("%s@%s", package[diff!=0], available[diff!=0])))
+# Create a snapshot to track dependencies in the lockfile
+renv::snapshot()
+
+
+
+
+
