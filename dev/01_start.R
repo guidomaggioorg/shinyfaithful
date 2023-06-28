@@ -102,7 +102,14 @@ renv::install(with(deps, sprintf("%s@%s", package[diff!=0], available[diff!=0]))
 # Create a snapshot to track dependencies in the lockfile
 renv::snapshot()
 
-
+usethis::use_github_action(
+  url = file.path("https://github.com/miraisolutions/techguides/blob/master",
+                  # "shiny-ci-cd/actions/ci.yml"
+                  "shiny-ci-cd/actions/ci-renv.yml"
+  ),
+  save_as = "workflow.yml"
+)
+usethis::use_github_actions_badge("workflow")
 
 
 
