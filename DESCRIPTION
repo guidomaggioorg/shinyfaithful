@@ -1,6 +1,6 @@
 Package: shinyfaithful
 Title: Shiny R package faithful geyser
-Version: 1.0.0
+Version: 1.0.0.9000
 Authors@R: person('Guido', 'Maggio', email = 'guido.maggio@mirai-solutions.com', role = c('cre', 'aut'))
 Description: Faithful histogram for Shiny4 workshop.
 License: MIT + file LICENSE
