@@ -11,7 +11,8 @@ app_ui <- function(request) {
     # Your application UI logic
     fluidPage(
       h1("Old Faithful Geyser - Hist"),
-      mod_faithful_hist_ui("hist")
+      mod_faithful_hist_ui("hist-waiting"),
+      mod_faithful_hist_ui("hist-eruptions")
     )
   )
 }

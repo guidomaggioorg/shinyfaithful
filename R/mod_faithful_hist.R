@@ -28,13 +28,14 @@ mod_faithful_hist_ui <- function(id) {
 }
 
 #' @rdname mod_faithful_hist
+#' @param variable character column name of faithful data
 #'
 #' @import shiny
-mod_faithful_hist_server <- function(id){
+mod_faithful_hist_server <- function(id, variable){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
     # generate bins based on input$bins from ui.R
-    variable <- "waiting"
+    # variable <- "waiting"
     x    <- datasets::faithful[, variable, drop = FALSE]
     bins <- reactive(seq(min(x), max(x), length.out = input$bins + 1))
 
