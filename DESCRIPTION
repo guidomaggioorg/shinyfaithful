@@ -1,6 +1,6 @@
 Package: shinyfaithful
 Title: Shiny4 workshop pkg
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: person('Guido', 'Maggio', email = 'guido.maggio@mirai-solutions.com', role = c('cre', 'aut'))
 Description: Package used for the 4th course of the Series Intro to Shiny.
 License: MIT + file LICENSE

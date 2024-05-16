@@ -1,3 +1,3 @@
-# shinyfaithful (development version)
+# shinyfaithful 1.0.0
 
-* Initial CRAN submission.
+* Duplicated histogram (#1).

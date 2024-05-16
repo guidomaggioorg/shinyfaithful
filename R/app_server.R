@@ -6,5 +6,6 @@
 #' @noRd
 app_server <- function(input, output, session) {
   # Your application server logic
-  mod_faithful_hist_server("hist")
+  mod_faithful_hist_server("hist-waiting", variable = "waiting")
+  mod_faithful_hist_server("hist-eruptions", variable = "eruptions")
 }
