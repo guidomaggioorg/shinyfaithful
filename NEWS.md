@@ -1,3 +1,3 @@
 # shinyfaithful (development version)
 
-* Initial CRAN submission.
+* Duplicated histogram (#1).
