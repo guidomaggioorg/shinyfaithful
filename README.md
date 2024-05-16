@@ -4,6 +4,8 @@
 # shinyfaithful
 
 <!-- badges: start -->
+
+[![workflow](https://github.com/guidomaggioorg/shinyfaithful/actions/workflows/workflow.yml/badge.svg)](https://github.com/guidomaggioorg/shinyfaithful/actions/workflows/workflow.yml)
 <!-- badges: end -->
 
 The goal of shinyfaithful is to …
