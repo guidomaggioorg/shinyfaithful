@@ -6,5 +6,5 @@ test_that("plot_hist produces a plot", {
                  freq = TRUE)
   expect_visible(p)
   expect_type(p, "list")
-  expect_s3_class(p, "histogram")
+  expect_s3_class(p, "histgram")
 })
