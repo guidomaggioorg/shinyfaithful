@@ -15,6 +15,7 @@ app_files = c(
   "R/",
   "inst/"
 )
+# options(rsconnect.packrat = TRUE)
 rsconnect::deployApp(
   account = "gmaggio", # not necessary
   appName = "FaithfulPlots", appFiles = app_files, forceUpdate = TRUE
