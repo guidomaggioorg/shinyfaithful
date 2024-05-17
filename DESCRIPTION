@@ -8,6 +8,7 @@ Imports:
     config (>= 0.3.2),
     golem (>= 0.4.1),
     graphics,
+    pkgload,
     shiny (>= 1.8.1.1)
 Encoding: UTF-8
 LazyData: true
@@ -16,7 +17,6 @@ URL: https://github.com/guidomaggioorg/shinyfaithful
 BugReports: https://github.com/guidomaggioorg/shinyfaithful/issues
 Suggests: 
     rsconnect,
-    pkgload,
     spelling,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
