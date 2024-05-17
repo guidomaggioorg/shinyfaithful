@@ -13,10 +13,12 @@ app_files = c(
   "DESCRIPTION",
   "NAMESPACE",
   "R/",
-  "inst/"
+  "inst/",
+  "renv.lock",
+  ".rscignore"
 )
 # options(rsconnect.packrat = TRUE)
 rsconnect::deployApp(
   account = "gmaggio", # not necessary
-  appName = "FaithfulPlots", appFiles = app_files, forceUpdate = TRUE
+  appName = "FaithfulPlotsTest", appFiles = app_files, forceUpdate = TRUE
 )
