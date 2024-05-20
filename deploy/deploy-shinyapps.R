@@ -13,9 +13,7 @@ app_files = c(
   "DESCRIPTION",
   "NAMESPACE",
   "R/",
-  "inst/",
-  "renv.lock",
-  ".rscignore"
+  "inst/"
 )
 # options(rsconnect.packrat = TRUE)
 rsconnect::deployApp(

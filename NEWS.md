@@ -1,3 +1,7 @@
+# shinyfaithful 1.1.1
+
+* Restored deployment
+
 # shinyfaithful 1.1.0
 
 * Correction deployment
